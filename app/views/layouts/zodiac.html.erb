@@ -1,13 +1,14 @@
-<h1>Aries</h1>
+<h1><%= @name %></h1>
 
 <p><%= @horoscope %></p>
 
 <p>Your lucky numbers for today are:</p>
 
 <ul>
-  <% @array_of_numbers.each do |a_num| %>
+  <% @array_of_numbers.each do |number| %>
     <li>
-      <%= a_num %>
+      <%= number %>
     </li>
   <% end %>
 </ul>
+
